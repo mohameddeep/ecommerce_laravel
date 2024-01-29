@@ -1,0 +1,51 @@
+1- instal laravel 9
+2-authentication:-
+-composer require laravel/jetstream
+-php artisan jetstream:install livewir
+-npm install
+-npm run div
+-npm run build
+-add some columns to user
+-php artisan migrate
+-go to app -> actions ->fortfiy-> createnew user and add new columns in database
+-go to roures -> web -> make new route
+-make home controller and make function rdirect to check role
+-go to view and make some changes
+
+
+-instal admin panel and make modification in front pages
+-make model view controller for catogry
+
+-using pagnite
+1-  $catogries=Catogry::paginate(2);
+2- in app -> provider -> appserviceprovider -> function boot -> Paginator::useBootstrapFive();
+3-in view ->    {{ $catogries->links() }}
+
+
+-install debugbar ->
+composer require barryvdh/laravel-debugbar --dev
+
+
+-product table
+1-make model migration controller
+2- make seeder factory
+
+
+
+-payment using stripe
+
+ composer require stripe/stripe-php
+ make account on stripe and make changes in .env
+ https://www.itsolutionstuff.com/post/laravel-9-stripe-payment-gateway-integration-tutorialexample.html->visit itsolutionstuff
+
+
+
+-pdf in larave
+
+composer require barryvdh/laravel-dompdf
+
+
+-must be verfied before login
+Features::emailVerification(),-> infortify.php must do it work
+
+modification in .emv for email
